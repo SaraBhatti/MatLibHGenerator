@@ -1,9 +1,9 @@
 from tkinter import *
 
 def Story1(win):
-    def final(tl: Toplevel, name, adjective, activity, location, disaster, emotion, name2):
+    def final(tl: Toplevel, name, adjective, activity, disaster, emotion, name2):
         text = f'''
-            Dr. {name} Data and their {adjective} Developer Academy team were excited about their {activity} day, deep in the {location}
+            Dr. {name} Data and their {adjective} Developer Academy team were excited about their {activity} day,
             but their plans were quickly thwarted by a {disaster}. They felt {emotion} and frustrated as they tried
             to overcome the obstacle, but things didn't go as planned. They put their large heads together to figure it out.
             To their surprise {name2} was the one trying to sabatage them.
@@ -84,10 +84,10 @@ def Story2(win):
     SubmitButton.place(x=150, y=270)
 
 Screen = Tk()
-Screen.title("Aventures of the Lost Data Scientists")
+Screen.title("Aventures of the Data Scientists")
 Screen.geometry('400x400')
 Screen.config(bg="SeaGreen1")
-Label(Screen, text='Adventures of the lost Data Scientist').place(x=95, y=20)
+Label(Screen, text='Adventures of the Data Scientist').place(x=95, y=20)
 
 # Creating buttons
 Story1Button = Button(Screen, text='A Bad Day', font=("Comic Sans", 13), command=lambda: Story1(Screen), bg='FireBrick1')
